@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+<title>4mix is down</title>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	$(document).ready(function($) {
+		var images = [
+			"backhoe2", "construction17", "chissel", "driving",
+			"handdrill", "workersign"
+		];
+
+		var index = Math.floor(Math.random() * images.length);
+		var path = "res/" + images[index] + ".gif";
+
+		$("#gif").css("background-image", "url(" + path + ")");
+	});	
+</script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+<style>
+
+html, body {
+	height: 100%;	
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: thin;
+	background: #222;
+	min-height: 30em;
+}
+
+a, a:visited {
+	color: #000;
+}
+
+#gif {
+	position: absolute;
+	height: 100%;
+	background-size: 200px;
+	background-position: bottom center;
+}
+
+.focus {
+	text-align: center;
+	background: #eee;
+	-webkit-box-shadow: -10px 10px 0px 0px rgba(170,170,170,0.8);
+	-moz-box-shadow: -10px 10px 0px 0px rgba(170,170,170,0.8);
+	box-shadow: -10px 10px 0px 0px rgba(170,170,170,0.8);
+	color: #222;
+}
+
+#wrap {
+	width: 30em;
+	margin-top: 15%;
+}
+
+#lead {
+	padding: 3em 6em;
+	position: relative;
+}
+
+#attribution {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-top: 20px;
+	font-size: 0.7em;
+	padding: 0 1em;
+}
+
+#hueg {
+	position: relative;
+	font-size: 2em;
+}
+
+.stretch {
+	width: 100%;
+}
+
+.centre {
+	margin: 0 auto;
+}
+
+
+</style>
+</head>
+
+<body>
+<div id="gif" class="stretch centre">
+	<div id="wrap" class="centre">
+		<div id="lead" class="focus">
+			<div id="hueg">There was a problem loading 4mix. Sorry!</div>
+			<p>Try again in a few minutes.</p>
+			<p><a href="http://twitter.com/4mixSPORTS">@4mixSPORTS</a></p>
+		</div>
+	</div>
+
+	<div id="attribution" class="focus">
+		<p>GIF from <a href="http://mikesfreegifs.com/main4/page_9.html" title="And may it bring you happiness for years to come">http://mikesfreegifs.com/main4/page_9.html</a></p>
+	</div>
+</div>
+</body>
+
+
+
